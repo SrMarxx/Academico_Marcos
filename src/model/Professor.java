@@ -9,7 +9,7 @@ public class Professor extends Pessoa{
     }
 
     public String toString() {
-        if(sexo == true) {
+        if(sexo == false) {
             return "Sr. " + nome + "\n("+email+")";
         }
         else {

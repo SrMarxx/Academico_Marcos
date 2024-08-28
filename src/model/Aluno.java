@@ -1,5 +1,7 @@
 package model;
 
+import exeptions.OutRangeExeption;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -35,6 +37,48 @@ public class Aluno extends Pessoa{
         return emailNovo;
     }
 
+    public void addNota(double nota, int peso) {
+        try{
+            Nota novo = new Nota(nota, peso);
+            notas.add(novo);
+            System.out.println("Nota adicionada com sucesso!\n");
+        }catch (OutRangeExeption e){
+            System.out.println("Erro ao adicionar nota:\n" + e.getMessage() + "\n");
+        }
+
+    }
+
+    public int getAvaliacao() {
+        return notas.size();
+    }
+
+    public double getMedia() {
+        int peso = 0;
+        double val = 0;
+        if(notas.isEmpty()) {
+            return 0.0;
+        }
+        for(Nota n: notas) {
+            peso = peso + n.getPeso();
+            val = val + (n.getNota() * n.getPeso());
+        }
+
+        return arredondar((val / peso));
+    }
+
+    public String getSituacao() {
+        double val = this.getMedia();
+        if(notas.isEmpty()) {
+            return "Aluno sem avaliação.";
+        }
+        else if(val < 6) {
+            return "Aluno reprovado";
+        }
+        else {
+            return "Aluno aprovado";
+        }
+    }
+
     private String geraMatricula() {
         if(Aluno.dataAtual.getYear() != LocalDate.now().getYear()) {
             Aluno.numSequencial = 0;
@@ -42,5 +86,9 @@ public class Aluno extends Pessoa{
         }
         Aluno.numSequencial++;
         return dataAtual.getYear() + "-" + Aluno.numSequencial;
+    }
+
+    private static double arredondar(double media) {
+        return Math.round(media * 100.0)/100.0;
     }
 }

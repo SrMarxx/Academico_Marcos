@@ -1,20 +1,33 @@
 package test;
 
 import model.Aluno;
+import model.Curso;
+import model.CursoTecnico;
+import model.Professor;
 
 public class TesteAluno {
 
     public static void main(String[] args){
 
-        //Aluno a = new Aluno("Joao", "joaogamer@gmail.com",true , 123123);
+        Professor p1 = new Professor("Hilton", "Hilton@gmail.com", true);
 
-        //System.out.println("\nAluno: " + a);
+        Curso c1 = new CursoTecnico("Math", "Math Programming", p1, "Integrado");
 
-        //System.out.println("\nAluno: " + a);
+        Aluno a = new Aluno("Joao", "joaogamer@gmail.com",true, c1);
 
+        System.out.println("\nAluno: " + a + "\n");
 
-        //System.out.println("\nO e-mail do aluno não foi alterado mesmo após alterar a cópia.");
+        a.addNota(11.0, 3);
 
+        a.addNota(7.0, 5);
+
+        a.addNota(8.0, 4);
+
+        a.addNota(9.0, 2);
+
+        a.addNota(-10.0, 1);
+
+        System.out.println("Número de avaliações realizadas: " + a.getAvaliacao() + "\nMédia das notas: " + a.getMedia() + "\nSituação: " + a.getSituacao());
     }
 
 }

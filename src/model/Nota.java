@@ -4,10 +4,10 @@ import exeptions.OutRangeExeption;
 
 public class Nota {
 
-    private float nota;
+    private double nota;
     private int peso;
 
-    public Nota(float nota, int peso) throws OutRangeExeption {
+    public Nota(double nota, int peso) throws OutRangeExeption {
 
         if(nota > 10)
             throw new OutRangeExeption("Nota não pode ser maior que 10");
@@ -15,8 +15,18 @@ public class Nota {
             throw new OutRangeExeption("Nota não pode ser menor que 0");
         else{
             this.nota = nota;
+            this.peso = peso;
         }
 
+    }
+
+    public double getNota() {
+        double notaNovo = this.nota;
+        return notaNovo;
+    }
+    public int getPeso() {
+        int pesoNovo = this.peso;
+        return pesoNovo;
     }
 
 }

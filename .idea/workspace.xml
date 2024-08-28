@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="Previnindo quebras de encapsulamento">
-      <change afterPath="$PROJECT_DIR$/src/model/Registro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TesteRegistro.java" afterDir="false" />
+    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="Criação da classe Registro">
+      <change afterPath="$PROJECT_DIR$/src/utilities/Crescente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/Decrescente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TesteAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TesteAluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TesteRegistro">
+  <component name="RunManager" selected="Application.TesteAluno">
     <configuration name="TesteAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.TesteAluno" />
       <module name="Academico_Marcos" />
@@ -108,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TesteRegistro" />
         <item itemvalue="Application.TesteAluno" />
+        <item itemvalue="Application.TesteRegistro" />
         <item itemvalue="Application.TesteNota" />
       </list>
     </recent_temporary>
@@ -133,7 +134,7 @@
       <workItem from="1724267930701" duration="2071000" />
       <workItem from="1724824497966" duration="172000" />
       <workItem from="1724824677218" duration="118000" />
-      <workItem from="1724824994699" duration="13080000" />
+      <workItem from="1724824994699" duration="15879000" />
     </task>
     <task id="LOCAL-00001" summary="Criado OutRangeExeption, atualizado algumas classes.">
       <option name="closed" value="true" />
@@ -167,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724837077462</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criação da classe Registro">
+      <option name="closed" value="true" />
+      <created>1724838240005</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724838240005</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +188,7 @@
     <MESSAGE value="Adicionando metodos novos na classe Aluno" />
     <MESSAGE value="Modificações na classe Aluno e criação de diferentes tipos de cursos" />
     <MESSAGE value="Previnindo quebras de encapsulamento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Previnindo quebras de encapsulamento" />
+    <MESSAGE value="Criação da classe Registro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação da classe Registro" />
   </component>
 </project>

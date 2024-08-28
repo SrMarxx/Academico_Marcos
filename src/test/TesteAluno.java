@@ -29,6 +29,10 @@ public class TesteAluno {
         a.addNota(-10.0, 1);
 
         System.out.println("Número de avaliações realizadas: " + a.getAvaliacao() + "\nMédia das notas: " + a.getMedia() + "\nSituação: " + a.getSituacao());
+
+        System.out.println("\n" + a.getNotasCre() + "\n");
+
+        System.out.println("\n" + a.getNotasDec() + "\n");
     }
 
 }

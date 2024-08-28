@@ -1,9 +1,12 @@
 package model;
 
 import exeptions.OutRangeExeption;
+import utilities.Crescente;
+import utilities.Decrescente;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Aluno extends Pessoa{
     private String nMatricula;
@@ -74,6 +77,30 @@ public class Aluno extends Pessoa{
         }
     }
 
+    public String getNotasCre(){
+        Crescente crescente = new Crescente();
+        Collections.sort(notas, crescente);
+
+        StringBuilder retorno = new StringBuilder("Lista de notas em ordem crescente:\n\n");
+
+        for(Nota a : notas) {
+            retorno.append(a.getNota()).append("\n\n");
+        }
+        return retorno.toString();
+    }
+
+    public String getNotasDec(){
+        Decrescente decrescente = new Decrescente();
+        Collections.sort(notas, decrescente);
+
+        StringBuilder retorno = new StringBuilder("Lista de notas em ordem decrescente:\n\n");
+
+        for(Nota a : notas) {
+            retorno.append(a.getNota()).append("\n\n");
+        }
+        return retorno.toString();
+    }
+
     private String geraMatricula() {
         if(Aluno.dataAtual.getYear() != LocalDate.now().getYear()) {
             Aluno.numSequencial = 0;
@@ -86,4 +113,5 @@ public class Aluno extends Pessoa{
     private static double arredondar(double media) {
         return Math.round(media * 100.0)/100.0;
     }
+
 }

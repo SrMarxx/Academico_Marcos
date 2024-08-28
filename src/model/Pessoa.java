@@ -10,4 +10,20 @@ public abstract class Pessoa {
         this.email = email;
         this.sexo = sexo;
     }
+
+    public String getNome() {
+        String nomeNovo = String.copyValueOf(this.nome.toCharArray());
+        return nomeNovo;
+
+    }
+
+    public String getEmail() {
+        String emailNovo = String.copyValueOf(this.email.toCharArray());
+        return emailNovo;
+    }
+
+    public String getId(){
+        return getNome() + "\n("+getEmail()+")";
+    }
+
 }

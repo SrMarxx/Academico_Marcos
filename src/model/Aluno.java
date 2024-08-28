@@ -21,20 +21,15 @@ public class Aluno extends Pessoa{
 
     @Override
     public String toString() {
-        return nMatricula + " - " + nome + "\n("+email+")";
+        if (sexo){
+            return getMatricula() + " - Aluno: " + getId();
+        }
+        return getMatricula() + " - Aluna: " + getId();
     }
 
-    public String getNome() {
-        String nomeNovo = String.copyValueOf(this.nome.toCharArray());
-        return nomeNovo;
-    }
     public String getMatricula() {
         String matriculaNovo = String.copyValueOf(this.nMatricula.toCharArray());
         return matriculaNovo;
-    }
-    public String getEmail() {
-        String emailNovo = String.copyValueOf(this.email.toCharArray());
-        return emailNovo;
     }
 
     public void addNota(double nota, int peso) {

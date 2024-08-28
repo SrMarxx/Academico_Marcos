@@ -8,11 +8,9 @@ public class Professor extends Pessoa{
 
     public String toString() {
         if(sexo) {
-            return "Sr. " + nome + "\n("+email+")";
+            return "Sr. " + getId();
         }
-        else {
-            return "Sra. " + nome + "\n("+email+")";
-        }
+        return "Sra. " + getId();
 
     }
 }

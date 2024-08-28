@@ -15,7 +15,7 @@ public class TesteAluno {
 
         Aluno a = new Aluno("Joao", "joaogamer@gmail.com",true, c1);
 
-        System.out.println("\nAluno: " + a + "\n");
+        System.out.println("\n" + a + "\n");
 
         a.addNota(11.0, 3);
 

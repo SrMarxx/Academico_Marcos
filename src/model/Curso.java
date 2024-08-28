@@ -1,9 +1,9 @@
 package model;
 
 public abstract class Curso {
-    private String nome;
-    private Professor professor;
-    private String descricao;
+    protected String nome;
+    protected Professor professor;
+    protected String descricao;
 
     public Curso(String nome, String descricao, Professor professor) {
         this.nome = nome;
@@ -11,8 +11,31 @@ public abstract class Curso {
         this.professor = professor;
     }
 
+    public String getNome() {
+        String nomeNovo = String.copyValueOf(nome.toCharArray());
+        return nomeNovo;
+    }
+
+    public String getProfessor() {
+        String professorNovo = String.copyValueOf(professor.getNome().toCharArray());
+        return professorNovo;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    public String getDescricao() {
+        String descricaoNovo = String.copyValueOf(descricao.toCharArray());
+        return descricaoNovo;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
     @Override
     public String toString() {
-        return "Curso: " + nome + "\nMinistrado por: " + professor + "\nDescrição: " + descricao;
+        return "Curso: " + getNome() + "\nMinistrado por: " + getProfessor() + "\nDescrição: " + getDescricao();
     }
 }

@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="Adicionando metodos novos na classe Aluno">
-      <change afterPath="$PROJECT_DIR$/src/model/CursoSuperior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CursoTecnico.java" afterDir="false" />
+    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="Modificações na classe Aluno e criação de diferentes tipos de cursos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Nota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Nota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TesteAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TesteAluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,7 @@
       <workItem from="1724267930701" duration="2071000" />
       <workItem from="1724824497966" duration="172000" />
       <workItem from="1724824677218" duration="118000" />
-      <workItem from="1724824994699" duration="9672000" />
+      <workItem from="1724824994699" duration="11947000" />
     </task>
     <task id="LOCAL-00001" summary="Criado OutRangeExeption, atualizado algumas classes.">
       <option name="closed" value="true" />
@@ -139,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724829696856</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modificações na classe Aluno e criação de diferentes tipos de cursos">
+      <option name="closed" value="true" />
+      <created>1724835250674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724835250674</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +156,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Criado OutRangeExeption, atualizado algumas classes." />
     <MESSAGE value="Adicionando metodos novos na classe Aluno" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando metodos novos na classe Aluno" />
+    <MESSAGE value="Modificações na classe Aluno e criação de diferentes tipos de cursos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificações na classe Aluno e criação de diferentes tipos de cursos" />
   </component>
 </project>

@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exeptions/OutRangeExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TesteNota.java" afterDir="false" />
+    <list default="true" id="a34b1ed0-032f-44b2-b060-3a41f6c8f414" name="Changes" comment="Criado OutRangeExeption, atualizado algumas classes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Nota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Nota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TesteAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TesteAluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SrMarxx"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SrMarxx/Academico_Marcos",
+    "accountId": "cb689b2b-ef8b-4634-872a-1063bd8b9f8e"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -111,11 +116,25 @@
       <workItem from="1724267930701" duration="2071000" />
       <workItem from="1724824497966" duration="172000" />
       <workItem from="1724824677218" duration="118000" />
-      <workItem from="1724824994699" duration="2869000" />
+      <workItem from="1724824994699" duration="4609000" />
     </task>
+    <task id="LOCAL-00001" summary="Criado OutRangeExeption, atualizado algumas classes.">
+      <option name="closed" value="true" />
+      <created>1724827981599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724827981599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Criado OutRangeExeption, atualizado algumas classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado OutRangeExeption, atualizado algumas classes." />
   </component>
 </project>

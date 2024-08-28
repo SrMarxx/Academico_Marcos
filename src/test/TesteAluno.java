@@ -1,9 +1,6 @@
 package test;
 
-import model.Aluno;
-import model.Curso;
-import model.CursoTecnico;
-import model.Professor;
+import model.*;
 
 public class TesteAluno {
 
@@ -14,6 +11,10 @@ public class TesteAluno {
         Curso c1 = new CursoTecnico("Math", "Math Programming", p1, "Integrado");
 
         Aluno a = new Aluno("Joao", "joaogamer@gmail.com",true, c1);
+
+        Aluno b = new Aluno("Maria", "mariazinha@gmail.com",false, c1);
+
+        Aluno c = new Aluno("Jose", "josedamanga@gmail.com",true, c1);
 
         System.out.println("\n" + a + "\n");
 

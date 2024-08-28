@@ -2,18 +2,12 @@ package model;
 
 public class Aluno extends Pessoa{
     private int nMatricula;
+    private Curso curso;
 
-    public Aluno(String nome, String email, int nMatricula) {
-        super(nome, email);
+    public Aluno(String nome, String email, boolean sexo, int nMatricula, Curso curso) {
+        super(nome, email, sexo);
         this.nMatricula = nMatricula;
-    }
-
-    public Aluno(Aluno aluno){
-        this(aluno.nome, aluno.email, aluno.nMatricula);
-    }
-
-    public void setEmail(String email){
-        this.email = email;
+        this.curso = curso;
     }
 
     @Override

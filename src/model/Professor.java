@@ -1,15 +1,13 @@
 package model;
 
 public class Professor extends Pessoa{
-    private boolean sexo;
 
     public Professor(String nome, String email, boolean sexo) {
-        super(nome, email);
-        this.sexo = sexo;
+        super(nome, email, sexo);
     }
 
     public String toString() {
-        if(sexo == true) {
+        if(sexo) {
             return "Sr. " + nome + "\n("+email+")";
         }
         else {
